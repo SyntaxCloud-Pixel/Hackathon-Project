@@ -1,8 +1,16 @@
-/* not professional names, simple css, no javascript */
-
 * {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+}
+
+@keyframes fadeInSlideUp {
+    0% { opacity: 0; transform: translateY(15px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInSlideDown {
+    0% { opacity: 0; transform: translateY(-15px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
 
 .page-body {
@@ -17,6 +25,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
+    animation: fadeInSlideDown 0.6s ease-out forwards;
 }
 
 .logo-thing {
@@ -91,7 +100,9 @@
     max-width: 1000px;
     margin: 40px auto;
     gap: 20px;
-}
+    animation: fadeInSlideUp 0.6s ease-out forwards;
+    animation-delay: 0.1s;
+    opacity: 0; }
 
 .dark-left-box {
     background-color: #1a332d;
@@ -202,11 +213,12 @@
     width: 100%;
 }
 
-/* Dashboard specific classes */
 .main-dashboard-area {
     max-width: 1100px;
     margin: 40px auto;
-}
+    animation: fadeInSlideUp 0.6s ease-out forwards;
+    animation-delay: 0.1s;
+    opacity: 0; }
 
 .top-dash-split {
     display: flex;
@@ -331,7 +343,6 @@
     line-height: 1.4;
 }
 
-/* Extended Dashboard classes */
 .content-section {
     margin-top: 60px;
 }
@@ -474,7 +485,6 @@
     margin-bottom: 40px;
 }
 
-/* Explore specific classes */
 .explore-split {
     display: flex;
     gap: 30px;
@@ -522,7 +532,6 @@
     font-family: inherit;
 }
 
-/* Leaderboard specific classes */
 .leaderboard-panel {
     background-color: #fdfaf5;
     padding: 40px;
@@ -649,7 +658,6 @@
     border-radius: 10px;
 }
 
-/* Notifications specific classes */
 .notification-panel {
     background-color: #fdfaf5;
     padding: 40px;
@@ -694,7 +702,6 @@
     color: #222;
 }
 
-/* AI Center specific classes */
 .trend-card {
     background-color: #fff;
     padding: 30px;
@@ -745,7 +752,6 @@
     margin-bottom: 20px;
 }
 
-/* Create Request specific classes */
 .form-card {
     background-color: #fdfaf5;
     padding: 40px;
@@ -829,7 +835,6 @@
     text-align: right;
 }
 
-/* Messages specific classes */
 .msg-card {
     background-color: #fff;
     padding: 20px 25px;
@@ -888,7 +893,6 @@
     margin-bottom: 20px;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .top-bar {
         flex-direction: column;
@@ -984,3 +988,55 @@
     }
 }
 
+/* Premium Micro-Interactions */
+.ripple-effect {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.4);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: rippleAnim 0.6s linear;
+    width: 2px;
+    height: 2px;
+}
+
+@keyframes rippleAnim {
+    0% { width: 0px; height: 0px; opacity: 0.5; }
+    100% { width: 300px; height: 300px; opacity: 0; }
+}
+
+#toast-container {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.premium-toast {
+    background: #1a332d;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    animation: slideUpToast 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.premium-toast.fade-out {
+    animation: fadeOutToast 0.4s ease forwards;
+}
+
+@keyframes slideUpToast {
+    0% { opacity: 0; transform: translateY(20px) scale(0.9); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes fadeOutToast {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0.9); }
+}
