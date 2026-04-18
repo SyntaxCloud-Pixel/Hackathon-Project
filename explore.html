@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub AI - Explore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-body">
+    <div class="top-bar">
+        <div class="logo-thing">
+            <div class="h-logo">H</div>
+            <div class="logo-text">HelpHub AI</div>
+        </div>
+        <div class="links-thing">
+            <a href="index.html" style="text-decoration: none; color: inherit;"><span>Dashboard</span></a>
+            <a href="explore.html" style="text-decoration: none; color: inherit;"><span class="tag-pill tag-blue" style="font-size:14px; padding: 8px 18px; font-weight: bold; background-color: #e8f4f0;">Explore</span></a>
+            <a href="leaderboard.html" style="text-decoration: none; color: inherit;"><span>Leaderboard</span></a>
+            <a href="notifications.html" style="text-decoration: none; color: inherit;"><span>Notifications</span></a>
+            <a href="create_request.html" style="text-decoration: none; color: inherit;"><span>Create Request</span></a>
+            <a href="messages.html" style="text-decoration: none; color: inherit;"><span>Messages</span></a>
+            <a href="profile.html" style="text-decoration: none; color: inherit;"><span>Profile</span></a>
+        </div>
+    </div>
+
+    <div class="main-dashboard-area">
+        <div style="background-color: #2b3334; color: white; padding: 50px; border-radius: 20px; margin-bottom: 30px;">
+            <div class="smit-text" style="color: #9cb1ab; letter-spacing: 2px; font-size: 12px; font-weight: bold; margin-bottom: 15px;">EXPLORE / FEED</div>
+            <h1 class="huge-heading-black" style="color: #fff; margin-top: 0;">Browse help requests with filterable community context.</h1>
+            <p class="dash-desc" style="color: #b0c2be; margin-bottom: 0;">Filter by category, urgency, skills, and location to surface the best matches.</p>
+        </div>
+
+        <div class="explore-split">
+            <div class="explore-filters-box">
+                <div class="stat-title" style="margin-bottom: 15px;">FILTERS</div>
+                <h2 style="font-size: 28px; margin: 0 0 40px 0; color: #222;">Refine the feed</h2>
+                
+                <div class="filter-input-wrapper">
+                    <label>Category</label>
+                    <select>
+                        <option>All categories</option>
+                    </select>
+                </div>
+                
+                <div class="filter-input-wrapper" style="margin-top: 30px;">
+                    <label>Urgency</label>
+                    <select>
+                        <option>All urgency levels</option>
+                    </select>
+                </div>
+                
+                <div class="filter-input-wrapper" style="margin-top: 30px;">
+                    <label>Skills</label>
+                    <input type="text" placeholder="React, Figma, Git/GitHub">
+                </div>
+                
+                <div class="filter-input-wrapper" style="margin-top: 30px;">
+                    <label>Location</label>
+                    <input type="text" placeholder="Karachi, Lahore, Remote">
+                </div>
+            </div>
+
+            <div class="explore-feed">
+                <!-- Card 1 -->
+                <div class="request-card">
+                    <div class="tags-row">
+                        <span class="tag-pill tag-blue">Web Development</span>
+                        <span class="tag-pill tag-red">High</span>
+                        <span class="tag-pill tag-green">Solved</span>
+                    </div>
+                    <h3 class="req-heading">Need help</h3>
+                    <p class="req-desc">helpn needed</p>
+                    <div class="req-bottom">
+                        <div class="req-user-info">
+                            <strong>Ayesha Khan</strong>
+                            <span class="req-user-meta">Karachi &bull; 1 helper interested</span>
+                        </div>
+                        <button type="button" class="small-white-btn">Open details</button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="request-card">
+                    <div class="tags-row">
+                        <span class="tag-pill tag-blue">Web Development</span>
+                        <span class="tag-pill tag-red">High</span>
+                        <span class="tag-pill tag-green">Solved</span>
+                    </div>
+                    <h3 class="req-heading">Need help making my portfolio responsive before demo day</h3>
+                    <p class="req-desc">My HTML/CSS portfolio breaks on tablets and I need layout guidance before tomorrow evening.</p>
+                    <div class="tags-row" style="margin-bottom:0;">
+                        <span class="tag-pill tag-blue">HTML/CSS</span>
+                        <span class="tag-pill tag-blue">Responsive</span>
+                        <span class="tag-pill tag-blue">Portfolio</span>
+                    </div>
+                    <div class="req-bottom" style="margin-top: 15px;">
+                        <div class="req-user-info">
+                            <strong>Sara Noor</strong>
+                            <span class="req-user-meta">Karachi &bull; 1 helper interested</span>
+                        </div>
+                        <button type="button" class="small-white-btn">Open details</button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="request-card">
+                    <div class="tags-row">
+                        <span class="tag-pill tag-blue" style="background-color: #e5efeb;">Design</span>
+                        <span class="tag-pill tag-blue" style="background-color: #e5efeb;">Medium</span>
+                        <span class="tag-pill tag-blue" style="background-color: #e5efeb;">Open</span>
+                    </div>
+                    <h3 class="req-heading">Looking for Figma feedback on a volunteer event poster</h3>
+                    <p class="req-desc">I have a draft poster for a campus community event and want sharper hierarchy, spacing, and CTA copy.</p>
+                    <div class="tags-row" style="margin-bottom:0;">
+                        <span class="tag-pill tag-blue" style="background-color: #e5efeb;">Figma</span>
+                        <span class="tag-pill tag-blue" style="background-color: #e5efeb;">Poster</span>
+                        <span class="tag-pill tag-blue" style="background-color: #e5efeb;">Design Review</span>
+                    </div>
+                    <div class="req-bottom" style="margin-top: 15px;">
+                        <div class="req-user-info">
+                            <strong>Ayesha Khan</strong>
+                            <span class="req-user-meta">Lahore &bull; 1 helper interested</span>
+                        </div>
+                        <button type="button" class="small-white-btn">Open details</button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="request-card">
+                    <div class="tags-row">
+                        <span class="tag-pill tag-grey">Career</span>
+                        <span class="tag-pill tag-green" style="background-color: #e8f5ec; color: #43965b;">Low</span>
+                        <span class="tag-pill tag-green" style="background-color: #e8f5ec; color: #43965b;">Solved</span>
+                    </div>
+                    <h3 class="req-heading">Need mock interview support for internship applications</h3>
+                    <p class="req-desc">Applying to frontend internships and need someone to practice behavioral and technical interview questions with me.</p>
+                    <div class="tags-row" style="margin-bottom:0;">
+                        <span class="tag-pill tag-blue" style="background-color: #e5efeb;">Interview Prep</span>
+                        <span class="tag-pill tag-blue" style="background-color: #e5efeb;">Career</span>
+                        <span class="tag-pill tag-blue" style="background-color: #e5efeb;">Frontend</span>
+                    </div>
+                    <div class="req-bottom" style="margin-top: 15px;">
+                        <div class="req-user-info">
+                            <strong>Sara Noor</strong>
+                            <span class="req-user-meta">Remote &bull; 2 helpers interested</span>
+                        </div>
+                        <button type="button" class="small-white-btn">Open details</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

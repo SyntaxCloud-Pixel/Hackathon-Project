@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub AI - Create Request</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-body">
+    <div class="top-bar">
+        <div class="logo-thing">
+            <div class="h-logo">H</div>
+            <div class="logo-text">HelpHub AI</div>
+        </div>
+        <div class="links-thing">
+            <a href="index.html" style="text-decoration: none; color: inherit;"><span>Dashboard</span></a>
+            <a href="explore.html" style="text-decoration: none; color: inherit;"><span>Explore</span></a>
+            <a href="create_request.html" style="text-decoration: none; color: inherit;"><span class="tag-pill tag-blue" style="font-size:14px; padding: 8px 18px; font-weight: bold; background-color: #e8f4f0;">Create Request</span></a>
+        </div>
+    </div>
+
+    <div class="main-dashboard-area">
+        <div style="background-color: #2b3334; color: white; padding: 50px; border-radius: 20px; margin-bottom: 30px;">
+            <div class="smit-text" style="color: #9cb1ab; letter-spacing: 2px; font-size: 12px; font-weight: bold; margin-bottom: 15px;">CREATE REQUEST</div>
+            <h1 class="huge-heading-black" style="color: #fff; margin-top: 0; max-width: 800px;">Turn a rough problem into a clear help request.</h1>
+            <p class="dash-desc" style="color: #b0c2be; margin-bottom: 0;">Use built-in AI suggestions for category, urgency, tags, and a stronger description rewrite.</p>
+        </div>
+
+        <div class="explore-split">
+            <!-- Form Card (Left) -->
+            <div class="form-card">
+                <div class="filter-input-wrapper">
+                    <label>Title</label>
+                    <input type="text" placeholder="Need review on my JavaScript quiz app before submission">
+                </div>
+                
+                <div class="filter-input-wrapper">
+                    <label>Description</label>
+                    <textarea placeholder="Explain the challenge, your current progress, deadline, and what kind of help would be useful."></textarea>
+                </div>
+                
+                <div class="form-row">
+                    <div class="filter-input-wrapper">
+                        <label>Tags</label>
+                        <input type="text" placeholder="JavaScript, Debugging, Review">
+                    </div>
+                    <div class="filter-input-wrapper">
+                        <label>Category</label>
+                        <select>
+                            <option>Web Development</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter-input-wrapper" style="width: 50%; margin-bottom: 30px;">
+                    <label>Urgency</label>
+                    <select>
+                        <option>High</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-white-pill">Apply AI suggestions</button>
+                    <button type="button" class="btn-green-pill">Publish request</button>
+                </div>
+            </div>
+
+            <!-- AI Assistant Card (Right) -->
+            <div class="ai-assistant-card">
+                <div class="leaderboard-title">AI ASSISTANT</div>
+                <h2 class="leaderboard-heading" style="margin-bottom: 10px;">Smart request guidance</h2>
+                
+                <div class="ai-guidance-list">
+                    <div class="ai-row">
+                        <span class="ai-label">Suggested category</span>
+                        <span class="ai-value">Community</span>
+                    </div>
+                    
+                    <div class="ai-row">
+                        <span class="ai-label">Detected urgency</span>
+                        <span class="ai-value">Low</span>
+                    </div>
+
+                    <div class="ai-row">
+                        <span class="ai-label">Suggested tags</span>
+                        <span class="ai-value">Add more detail for smarter tags</span>
+                    </div>
+
+                    <div class="ai-row" style="border-bottom: none;">
+                        <span class="ai-label">Rewrite suggestion</span>
+                        <span class="ai-value">Start describing the challenge to generate a stronger version.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpHub AI - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-body">
+    <div class="top-bar">
+        <div class="logo-thing">
+            <div class="h-logo">H</div>
+            <div class="logo-text">HelpHub AI</div>
+        </div>
+        <div class="links-thing">
+            <a href="dashboard.html"><span>Home</span></a>
+            <a href="messages.html"><span>Messages</span></a>
+            <span>Explore</span>
+            <span>Leaderboard</span>
+        </div>
+
+    </div>
+
+    <div class="big-flex-container">
+        <div class="dark-left-box">
+            <div class="small-title">COMMUNITY ACCESS</div>
+            <h1 class="huge-heading">Enter the support network.</h1>
+            <p class="description-text">Choose a demo identity, set your role, and jump into a multi-page product flow designed for asking, offering, and tracking help with a premium interface.</p>
+            <ul class="bullet-points">
+                <li>Role-based entry for Need Help, Can Help, or Both</li>
+                <li>Direct path into dashboard, requests, AI Center, and community feed</li>
+                <li>Persistent demo session powered by LocalStorage</li>
+            </ul>
+        </div>
+
+        <div class="white-right-box">
+            <div class="small-title-blue">LOGIN / SIGNUP</div>
+            <h2 class="medium-heading">Authenticate your community profile</h2>
+            
+            <!-- This form uses standard HTML to link to the next page, as requested -->
+            <form action="explore.html" method="GET" class="form-stuff">
+                <div class="input-wrapper">
+                    <label>Select demo user</label>
+                    <select>
+                        <option>Ayesha Khan</option>
+                    </select>
+                </div>
+                
+                <div class="input-wrapper">
+                    <label>Role selection</label>
+                    <select>
+                        <option>Both</option>
+                    </select>
+                </div>
+                
+                <div class="two-inputs">
+                    <div class="input-wrapper">
+                        <label>Email</label>
+                        <input type="email" value="community@helphub.ai">
+                    </div>
+                    <div class="input-wrapper">
+                        <label>Password</label>
+                        <input type="password" value="........">
+                    </div>
+                </div>
+                
+                <!-- Use button for later functionality as requested -->
+                <button type="submit" class="big-green-button">Continue to dashboard</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
